@@ -43,7 +43,7 @@ Let look in side the Shell script
 
         vim /home/encrypt/checksrv.sh
 
-        ![alt tag](https://s32.postimg.org/t8v6s39r9/Screenshot_358.png)
+![alt tag](https://s32.postimg.org/t8v6s39r9/Screenshot_358.png)
 
 Now lets Encrypt our Shell file
 Note that you always welcome to change password file in the shc-3.8.7 as you desire.
@@ -63,7 +63,7 @@ Lets check on our encrypted source file
 
         root@fileserver:/usr/src/shc-3.8.7# vim  /home/encrypt/checksrv.sh.x
 
-        ![alt tag](https://s31.postimg.org/j2v9tgkwr/Screenshot_357.png)
+![alt tag](https://s31.postimg.org/j2v9tgkwr/Screenshot_357.png)
 
 Now you can see some binary stuffs instead of the plain shell text.
 
