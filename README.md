@@ -1,22 +1,30 @@
 # How-to-Encrypt-a-shell-script
-At first lets download some packeges which required to run our shell encryption programe
+
+If you’re really concerning about the privacy of the  source of your shell scripts,
+I have use Ubuntu 14.04 server with the root permission.
+The source of the program SCH which I’m using here is from
+
+        http://www.datsi.fi.upm.es/
 
 
-You will need to download gcc compliler 
+At first lets download some packeges which required to run our shell encryption program
 
-        root@ubuntuvpn:~/shc-3.8.7# apt-get install gcc
+
+You will need to download gcc compilers 
+
+        root@ubuntu:~/shc-3.8.7# apt-get install gcc
 
 You will need to install 'make' utility if it required (Depend on your system)
 
-        root@ubuntuvpn:~/shc-3.8.7# apt-get install make
+        root@ubuntu:~/shc-3.8.7# apt-get install make
 
-After that  lets download our encryption programe/ source [Original from http://www.datsi.fi.upm.es/]
+After that  lets download our encryption program/ source [Original from http://www.datsi.fi.upm.es/]
 
-        root@ubuntuvpn:~# wget http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.7.tgz
+        root@ubuntu:~# wget http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.7.tgz
   
 Lets extract the '.tgz' file
 
-        root@ubuntuvpn:~# tar xvf shc-3.8.7.tgz
+        root@ubuntu:~# tar xvf shc-3.8.7.tgz
         shc-3.8.7/CHANGES
         shc-3.8.7/Copying
         shc-3.8.7/Makefile
@@ -31,15 +39,15 @@ Lets extract the '.tgz' file
         shc-3.8.7/test.csh
         shc-3.8.7/test.ksh
 
-Let jump in to the shc source folder
+Let jump in to the 'shc' source folder
 
-        root@fileserver:/usr/src# cd shc-3.8.7
+        root@ubuntu:/usr/src# cd shc-3.8.7
 
-In  here im going to encrypt a shell scrypt in the 
+In  here I'm going to encrypt a shell script in the 
 
         /home/encrypt
 
-Let look in side the Shell script
+Let's look inside the Shell script
 
         vim /home/encrypt/checksrv.sh
 
@@ -48,11 +56,11 @@ Let look in side the Shell script
 Now lets Encrypt our Shell file
 Note that you always welcome to change password file in the shc-3.8.7 as you desire.
 
-        root@fileserver:/usr/src/shc-3.8.7# ./shc -f /home/encrypt/checksrv.sh
+        root@ubuntu:/usr/src/shc-3.8.7# ./shc -f /home/encrypt/checksrv.sh
 
 There will be two additional files
 
-        root@fileserver:/usr/src/shc-3.8.7# ls  /home/encrypt/
+        root@ubuntu:/usr/src/shc-3.8.7# ls  /home/encrypt/
         checksrv.sh  checksrv.sh.x  checksrv.sh.x.c
 
 'checksrv.sh' is our original (Unencrypted) shell source
@@ -61,7 +69,7 @@ There will be two additional files
 
 Lets check on our encrypted source file
 
-        root@fileserver:/usr/src/shc-3.8.7# vim  /home/encrypt/checksrv.sh.x
+        root@ubuntu:/usr/src/shc-3.8.7# vim  /home/encrypt/checksrv.sh.x
 
 ![alt tag](https://s31.postimg.org/j2v9tgkwr/Screenshot_357.png)
 
