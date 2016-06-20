@@ -1,9 +1,9 @@
 # How-to-Encrypt-a-shell-script
 
-If you’re really concerning about the privacy of the  source of your shell scripts,
+If you’re really concerning about the privacy of your shell scripts(Source),
 
-I have use Ubuntu 14.04 server with the root permission.
-The source of the program SCH which I’m using here is from
+I have use Ubuntu 14.04 server with the root Privilage.
+The source of the program 'SCH' which I’m using here is from
 
         http://www.datsi.fi.upm.es/
 
