@@ -13,19 +13,19 @@ At first lets download some packeges which required to run our shell encryption 
 
 You will need to download gcc compilers 
 
-        root@ubuntu:~/shc-3.8.7# apt-get install gcc
+        root@ubuntu:/usr/src# apt-get install gcc
 
 You will need to install 'make' utility if it required (Depend on your system)
 
-        root@ubuntu:~/shc-3.8.7# apt-get install make
+        root@ubuntu:/usr/src# apt-get install make
 
 After that  lets download our encryption program/ source [Original from http://www.datsi.fi.upm.es/]
 
-        root@ubuntu:~# wget http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.7.tgz
+        root@ubuntu:/usr/src# wget http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.7.tgz
   
 Lets extract the '.tgz' file
 
-        root@ubuntu:~# tar xvf shc-3.8.7.tgz
+        root@ubuntu:/usr/src# tar xvf shc-3.8.7.tgz
         shc-3.8.7/CHANGES
         shc-3.8.7/Copying
         shc-3.8.7/Makefile
