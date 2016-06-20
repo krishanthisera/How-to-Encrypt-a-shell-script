@@ -19,7 +19,7 @@ You will need to install 'make' utility if it required (Depend on your system)
 
         root@ubuntu:/usr/src# apt-get install make
 
-After that  lets download our encryption program/ source [Original from http://www.datsi.fi.upm.es/]
+After that  lets download our encryption program/ source [from http://www.datsi.fi.upm.es/]
 (You can download the 'SCH' source file which I've attached to this repository from from http://www.datsi.fi.upm.es/)
 
         root@ubuntu:/usr/src# wget http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.7.tgz
