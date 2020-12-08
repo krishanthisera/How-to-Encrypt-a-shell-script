@@ -80,6 +80,7 @@ Now you can see some binary stuffs instead of the plain shell text.
 
 Now you can share the '.sh.x' so your source will be hidden
 
+~
 
 
   
